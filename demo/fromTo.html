@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .box {
+            display: block;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            border-radius: 6px;
+            margin-top: 4px;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .green {
+            background-color: #6fb936;
+        }
+
+        .orange {
+            background-color: #f38630;
+        }
+
+        .grey {
+            background-color: #989898;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box green"></div>
+    <div class="box orange"></div>
+    <div class="box grey"></div>
+    <script type="text/javascript" src="../plugin/jquery-min.js"></script>
+    <script type="text/javascript" src="../plugin/gsap.min.js"></script>
+    <script type="text/javascript" src="../plugin/ScrollToPlugin.min.js"></script>
+    <script>
+        //animate ".box" from an opacity of 0 to an opacity of 0.5
+        gsap.fromTo(".box", { autoAlpha: 0 }, { autoAlpha: 0.7, duration: 3 });
+    </script>
+</body>
+
+</html>
